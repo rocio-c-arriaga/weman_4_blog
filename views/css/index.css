@@ -1,0 +1,29 @@
+/*https://material.io/tools/icons/?icon=face&style=baseline*/
+/*https://fontawesome.com/*/
+/*https://fonts.google.com/*/
+
+header {
+    width: 100%;
+    overflow: auto;
+    max-width;
+    max-height;
+}
+
+header img {
+    max-width:80px;
+    max-height:80px;
+}
+
+#logo{
+    float: left;
+    border-radius: 100%;
+}
+
+h1 {
+    float: left;
+    margin-left: 50px;
+}
+
+.icons_tools {
+    float:right;
+}
