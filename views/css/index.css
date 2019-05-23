@@ -5,13 +5,17 @@
 header {
     width: 100%;
     overflow: auto;
-    max-width;
-    max-height;
+    background-color: rgb(255, 255, 255) 
 }
 
 header img {
     max-width:80px;
     max-height:80px;
+}
+
+#titulo {
+    font-family: Verdana;
+    color:rgb(255, 123, 0);
 }
 
 #logo{
@@ -26,4 +30,30 @@ h1 {
 
 .icons_tools {
     float:right;
+    color:rgb(255, 123, 0);
+
+}
+
+.texto {
+    max-width: 70%;
+    color:rgb(255, 123, 0);
+}
+
+.bloque {
+    float: left;
+    background-color: white;
+    font-family: Verdana;
+    display:flex;
+    align-items:center;
+  justify-content: space-between; 
+}
+
+.imgbloque {
+    float: right;
+    display: flex;
+  justify-content: right;
+}
+.foto_artículo {
+    max-width: 200px;
+    max-height: 200px;
 }
