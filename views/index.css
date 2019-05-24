@@ -1,0 +1,62 @@
+body {
+	width: 100%;
+	/*
+	background-image: url('');
+	*/
+}
+
+/* Lo ideal es generar una clase por cada TIPO de información que 
+vayamos a mostrar... Dentro de esa clase podemos usar etiquetas derivadas
+para hacer personalización */
+.comentario {
+	background-color: #f6f6f6;
+	margin-bottom: 12px;
+	border-style: solid;
+	border-radius: 7px;
+	border-width: 2px;
+	border-color: black;
+}
+
+.comentario h3 {
+	/* Estas reglas actúan sobre todas las TAG <h3> que estén dentro
+	de un div de clase comentario... hacer este tipo de reglas a veces
+	simplifica la vida para no generar demasiadas clases.*/
+	font-weight: 900;
+	font-family: sans-serif;
+	color: darkblue;
+	font-size: 1.2rem;
+	float: left;
+}
+
+.comentario_cont {
+	float: left;
+	width: 65%;
+	background-color: white;
+}
+
+.comentario_hdr {
+	max-width: 65%;
+}
+
+.comentario_hdr p {
+	/*Aplica para el P del autor*/
+	float: right;
+	font-size: 12pt;
+	font-color: #646464;
+}
+
+.comentario img {
+	float: right;
+	/* Trucazo! para que no deforme la relación de aspecto de las imágenes
+	se usa max-height y max-width, en lugar de un valor fijo, así podemos saber
+	que una imagen no usará más espacio del que queremos, pero no las va a deformar
+	*/
+	max-height: 300px;
+	max-width: 300px;
+}
+
+.credenciales {
+	/* Aquí se puede usar la posición absoluta para que se muestre siempre donde mismo*/
+	position: absolute;
+
+}

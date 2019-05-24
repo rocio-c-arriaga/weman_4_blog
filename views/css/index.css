@@ -1,6 +1,7 @@
 /*https://material.io/tools/icons/?icon=face&style=baseline*/
 /*https://fontawesome.com/*/
 /*https://fonts.google.com/*/
+/*https://uigradients.com/#Wiretap*/
 
 header {
     width: 100%;
@@ -15,7 +16,7 @@ header img {
 
 #titulo {
     font-family: Verdana;
-    color:rgb(255, 123, 0);
+    color:rgb(235, 93, 175);
 }
 
 #logo{
@@ -36,16 +37,17 @@ h1 {
 
 .texto {
     max-width: 70%;
-    color:rgb(255, 123, 0);
+    color:white;
 }
 
 .bloque {
-    float: left;
-    background-color: #8A2387#E94057#F27121;
+    padding: 10px 10px 10px 71px;
+    margin:30px 10px 20px 160px;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
     font-family: Verdana;
     display:flex;
     align-items:center;
-  justify-content: space-between; 
+    justify-content: space-between; 
 }
 
 .imgbloque {

@@ -1,0 +1,62 @@
+<head>
+    <meta charset="utf-8">
+    <title>WeMan Connect Blog</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script type="text/javascript">
+        function dibuja() {
+            let cont = document.getElementById('cont_comentarios');
+            for (let i = 0; i < 100; i++) {
+                let nvoComment = '<div class="comentario" id="com'+i+'">'+
+        '<div class="comentario_hdr">'+
+            '<h3 id="titulo_'+i+'">' + 'Comentario ' + i +'</h3>'+
+            '<p id="autor">'+i+'</p>'+
+        '</div>'+
+        `<div id="contenido" class="comentario_cont">${i}</div>`+
+        '<img src="./ejemplo.jpg" alt="imagen de ejemplo" />'+
+    '</div>';
+                cont.innerHTML += nvoComment;
+            }
+        }
+        function inicia() {
+            //dibuja();
+        }
+    </script>
+</head>
+<body onload="inicia()">
+    <!-- Encabezado general -->
+    <!-- Contiene un ícono, una barra de título y espacio para dos íconos del lado derecho -->
+    <!-- navegación -->
+    <nav>
+        <img src="./icono-default.png" />
+        <h1>WeMan Connect Blog</h1>
+        <div class="hdr_tools">
+            <a href="#" onclick="login('param1', 'param2')"><li>Publicar</li></a>
+            <a href="#"><li>Entrar</li></a>
+    </nav>
+    <!-- /navegación -->
+    <!-- Formulario de pruebas -->
+    <form id="frmLogin" method="post" action="./login">
+        <input type="text" name="usr" placeholder="Nombre del usuario" />
+        <input type="password" name="pwd" placeholder="Contraseña" />
+        <input type="submit" name="hazmagia" value="Valida!">
+    </form>
+    <br>
+    <form id="frmPublica" method="post" action="./publica">
+        <input type="hidden" name="idusr" value = "1" />
+        <input type="text" name="titulo" placeholder="Título del comentario" />
+        <textarea name="texto" cols="30" rows="5"></textarea>
+        <input type="file" name="imagen" />
+        <input type="submit" name="hazmagia" value="xikmaka!">
+    </form>
+
+    <!-- Luego hay un contenedor grande donde van las publicaciones -->
+    <section id="cont_comentarios"></section>
+    <!-- La publicación la haría en un script que se repita varias veces como demo -->
+
+    <!-- Falta el separador de firmado -->
+
+    <!-- Podría añadir aquí el separador o div para la publicación nueva... -->
+
+</body>
+</html>
+>>>>>>> 185f16a735e6f7dbced802099db84bf1bb2eb896
