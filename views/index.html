@@ -28,7 +28,7 @@
     </header>
 
     <section id="publicaciones">
-       <!-- <div class="bloque">
+        <!-- <div class="bloque">
             <div class="texto">
                 <article>Entrada de noticias</article><br>
                 <time>00:00 22/05/2019</time>
@@ -74,30 +74,39 @@
                     alt="una imagen" title="group"><br>
             </div>
         </div>
-        <hr>  --> 
+        <hr>  -->
 
     </section>
 
-   <p>Correo electronico</p>
-    <input type="text" name="correo electronico" id="fname"><br><br>
-    <p>Contraseña</p>
-    <input type="text" name="contraseña" value=""><br><br>
-    <input type="submit" value="Olvidé mi contraseña"><br>
-    <input type="submit" value="Entrar"><br>
+    <div class="datos">
 
-    Publicar entrada nueva<br>
-    <input type="text" name="nombre" value="Título de la entrada"><br>
-    <textarea>Contenido</textarea><br>
-    <!--Botón de envío del formulario-->
-    <input type="submit" value="Publicar"><br>
-    <i class="material-icons">add_a_photo</i>
+        <form id="frmLogin">
+            <label for="correo electronico">Correo electrónico</label>
+            <input type="correo electronico" name="usr" placeholde="correo electronico"><br>
+            <label for="contraseña">Contraseña</label>
+            <input type="contraseña" name="pwd" placeholder="contraseña"><br>
+        </form>
+        <a href="#">Olvidé mi contraseña</a>
 
+        <button onclick="login()">Entrar</button>
+    </div>
+
+    <form id="comentarios">
+        <input type="hidden" name="usuario" id="usuario">
+        Publicar entrada nueva<br>
+        <input type="text" name="nombre" value="Título de la entrada"><br>
+        <textarea name="contenido" id="contenido">Contenido</textarea><br>
+        <!--Botón de envío del formulario-->
+        <i class="material-icons">add_a_photo</i>
+    </form>
+    <button onclick="comentarios()">Publicar</button>
 
 </body>
 
 </html>
 
-
 <!--https://www.figma.com/
-https://pencil.evolus.vn/-->
-
+https://pencil.evolus.vn/
+https://developer.mozilla.org/es/docs/HTML/HTML5/Formularios_en_HTML5
+admin@wemanblog.com
+weman-->
